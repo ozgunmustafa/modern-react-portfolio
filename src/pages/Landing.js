@@ -35,7 +35,6 @@ export default function Landing({contact,projects}) {
         
       </section>
 
-      <div style={{ height: 300 }}></div>
 
       <ImageBox images={images}></ImageBox>
 
