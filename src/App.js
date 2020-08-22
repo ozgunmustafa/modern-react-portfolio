@@ -15,7 +15,6 @@ function App() {
      
 
       <Landing projects={data.projects} contact={data.contact}/>
-      <Works projects={data.projects} />
       <Footer contact={data.contact}/>
     </div>
   );
