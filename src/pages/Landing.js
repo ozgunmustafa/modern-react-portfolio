@@ -41,7 +41,7 @@ export default function Landing({ contact, projects }) {
 
       <section className="">
         <h1 className="section-title">Featured Works</h1>
-        <small className="text-muted">You can preview my work</small>
+        <small className="text-muted">You can preview my works</small>
 
         <div className="portfolio-list">
           {projects.map((project) => (
@@ -51,7 +51,7 @@ export default function Landing({ contact, projects }) {
       </section>
 
       <section className="">
-        <h1 className="section-title">Nasıl Çalışırım? </h1>
+        <h1 className="section-title">What is my way? </h1>
         <small className="text-muted">You can preview my works plan...</small>
 
         <div className="portfolio-list">

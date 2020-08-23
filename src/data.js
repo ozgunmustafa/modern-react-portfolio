@@ -47,8 +47,7 @@ export default {
         
         images : [
           "https://i.hizliresim.com/xRvqHq.png",
-          "https://i.hizliresim.com/oar5HQ.png",
-          "https://i.hizliresim.com/ZlaL3N.png",
+          "https://www.youtube.com/watch?v=AoMAUy8_R_c"
 
         ],
         url: "https://www.youtube.com/watch?v=AoMAUy8_R_c"
