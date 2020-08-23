@@ -17,9 +17,7 @@ export default function PortfolioCard({ project }) {
           <small className="text-muted">{project.description}</small>
         </div>
         <div>
-          <i className=" action-button">
-            <ImageBox images={project.images}></ImageBox>
-          </i>
+          <ImageBox images={project.images}/>
           <a href={project.url} className=" action-button">
             Git
           </a>

@@ -31,7 +31,7 @@ export default function ImageBox({ images, open }) {
   const [toggler, setToggler] = useState(false);
 
   return (
-    <div >
+    <div  className=" action-button">
         <IoMdImages
           style={{ cursor: "pointer" }}
           type="button"
