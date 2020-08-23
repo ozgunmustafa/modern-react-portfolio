@@ -1,14 +1,15 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
-import ImageBox from "../components/ImageBox";
 import { FaLaptopCode, FaWhatsapp } from "react-icons/fa";
 import { BsFillCollectionFill } from "react-icons/bs";
 import { AiOutlineAntDesign } from "react-icons/ai";
 import { VscFeedback } from "react-icons/vsc";
-import { IoIosVideocam } from "react-icons/io";
+import PlanCard from "../components/PlanCard";
+import PortfolioCard from "../components/PortfolioCard";
 
-export default function Landing({contact,projects}) {
+
+export default function Landing({ contact, projects }) {
+
   const images = [
     "//placekitten.com/1500/500",
     "//placekitten.com/4000/3000",
@@ -20,23 +21,23 @@ export default function Landing({contact,projects}) {
     <div className="px-50 py-50 container">
       <section className="contact">
         <p className="landing-text">
-          I can help you about <span className="empty-text">Design</span> and <b className="empty-text">Development</b>.
+          I can help you about <span className="empty-text">Design</span> and{" "}
+          <b className="empty-text">Development</b>.
         </p>
         <div className="my-30">
-        <Bounce top>
-          <a href={`https://wa.me/${contact.PHONE}`} className="btn btn-dark mr-10">
-            <FaWhatsapp size=".8em" /> Contact on Whatsapp
+          <Bounce top>
+            <a
+              href={`https://wa.me/${contact.PHONE}`}
+              className="btn btn-dark mr-10"
+            >
+              <FaWhatsapp size=".8em" /> Contact on Whatsapp
+            </a>
+          </Bounce>
+          <a href="#" className="btn my-10 ">
+            Resume
           </a>
-        </Bounce>
-        <a href="#" className="btn my-10 ">
-          Resume
-        </a>
         </div>
-        
       </section>
-
-
-      <ImageBox images={images}></ImageBox>
 
       <section className="">
         <h1 className="section-title">Featured Works</h1>
@@ -44,24 +45,8 @@ export default function Landing({contact,projects}) {
 
         <div className="portfolio-list">
           {projects.map((project) => (
-            <a href={project.url}>
-            <div class="portfolio-card">
-            <span className="portfolio-icon">
-              <IoIosVideocam size="1.5em" />
-            </span>
-            <img
-              className="portfolio-image"
-              src={project.images[0].url}
-              alt="portfolio"
-            />
-            <h1>{project.title}</h1>
-            <small className="text-muted">Design and Development</small>
-          </div>
-            </a>
-            
+           <PortfolioCard project={project}/>
           ))}
-
-          
         </div>
       </section>
 
@@ -70,55 +55,34 @@ export default function Landing({contact,projects}) {
         <small className="text-muted">You can preview my works plan...</small>
 
         <div className="portfolio-list">
-          <div class="plan-card">
-            <Fade>
-              <h2>Planning</h2>
-
-              <p className="text-muted">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                cumque ab provident? Maxime pariatur repudiandae reiciendis
-                quasi voluptatem accusamus quisquam excepturi soluta veritatis
-                animi, libero assumenda dolore, autem suscipit sed!
-              </p>
-              <BsFillCollectionFill size="3.5em" style={{ marginTop: 30 }} />
-            </Fade>
-          </div>
-          <div class="plan-card">
-            <Fade>
-              <h2>Design</h2>
-              <p className="text-muted">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                cumque ab provident? Maxime pariatur repudiandae reiciendis
-                quasi voluptatem accusamus quisquam excepturi soluta veritatis
-                animi, libero assumenda dolore, autem suscipit sed!
-              </p>
-              <AiOutlineAntDesign size="3.5em" style={{ marginTop: 30 }} />
-            </Fade>
-          </div>
-          <div class="plan-card">
-            <Fade>
-              <h2>Development</h2>
-              <p className="text-muted">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                cumque ab provident? Maxime pariatur repudiandae reiciendis
-                quasi voluptatem accusamus quisquam excepturi soluta veritatis
-                animi, libero assumenda dolore, autem suscipit sed!
-              </p>
-              <FaLaptopCode size="3.5em" style={{ marginTop: 30 }} />
-            </Fade>
-          </div>
-          <div class="plan-card">
-            <Fade>
-              <h2>Feedbacks</h2>
-              <p className="text-muted">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                cumque ab provident? Maxime pariatur repudiandae reiciendis
-                quasi voluptatem accusamus quisquam excepturi soluta veritatis
-                animi, libero assumenda dolore, autem suscipit sed!
-              </p>
-              <VscFeedback size="3.5em" style={{ marginTop: 30 }} />
-            </Fade>
-          </div>
+          <PlanCard
+            title="Planning"
+            text="İstekleriniz doğrultusunda, neyin nasıl yapılması gerektiğinin planını çıkarıyorum. Daha sonrasında ise bunları öncelik derecesine göre sıralıyorum."
+            icon={
+              <BsFillCollectionFill size="3.5em" style={{ marginTop: 40 }} />
+            }
+          />
+              <PlanCard
+            title="Designing"
+            text="Planı yapılmış projenizin kabaca bir prototip çıkarıyor ve bu doğrultuda fikrinizin tasarımını hayata geçiriyorum."
+            icon={
+              <AiOutlineAntDesign  size="3.5em" style={{ marginTop: 40 }} />
+            }
+          />
+              <PlanCard
+            title="Development"
+            text="Tasarımı oluşturulmuş projenizin hayata geçirilmesi için gerekli araçları hazırlıyor ve geliştirmeye başlıyorum."
+            icon={
+              <FaLaptopCode size="3.5em" style={{ marginTop: 40 }} />
+            }
+          />
+              <PlanCard
+            title="FeedBacks"
+            text="Projenizin gelişim durumunu 2 aşamalı olarak gösteriyor ve geri bildirimleriniz doğrultusunda değişiklik yapıyorum."
+            icon={
+              <VscFeedback size="3.5em" style={{ marginTop: 40 }} />
+            }
+          />
         </div>
       </section>
     </div>

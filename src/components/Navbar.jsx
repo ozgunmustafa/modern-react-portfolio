@@ -1,30 +1,38 @@
-import React from 'react'
-import styled from "styled-components"
-import RightNav from './RightNav';
-
+import React from "react";
+import styled from "styled-components";
+import Burger from "./Burger";
+import Fade from "react-reveal/Fade";
 
 const Nav = styled.nav`
-    width:100;
-    height:65px;
-    border-bottom:2px solid #f1f1f1;
-    padding:0 20px;
-    display:flex;
-    justify-content:space-between;
-    
-   
-    
-`
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
 
+  .logo {
+    padding: 15px 0;
+  }
+`;
 
-const Navbar=()=>{
-    return (
-        <Nav>
-            <div className="logo">
-            NavBaR
-            </div>
-            <RightNav/>
-        </Nav>
-    )
-}
+const Navbar = () => {
+  return (
+    <Nav className="container">
+      <div>
+        <h3 class="site-name ">ozgunmustafa</h3>
+        <h4 class="slogan text-muted">
+          <Fade bottom cascade>
+            Developer + Designer
+          </Fade>
+        </h4>
+      </div>
 
-export default Navbar
+      <Burger />
+    </Nav>
+  );
+};
+
+export default Navbar;

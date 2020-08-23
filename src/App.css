@@ -12,7 +12,7 @@ a{
  color: #1b1d1c;
 }
 
-nav{
+/* nav{
   display:flex;
   min-height:12rem;
   justify-content:space-between;
@@ -36,7 +36,7 @@ ul li a{
 
 ul li a:hover{
   text-decoration: underline;
-}
+} */
 footer{
   margin-top: 50px;
 }
@@ -89,7 +89,7 @@ footer{
 }
 
 .btn{
- padding: 2.2vw 2vw;
+ padding: 1.8vw 2.2vw;
  display: inline-block;
  background-color: #eee;
  color: #1b1d1c;
@@ -101,6 +101,16 @@ footer{
 .btn-dark{
  color: #eee;
  background-color: #1b1d1c;
+}
+.visit-button{
+  padding: 5px 15px;
+  color:black;
+  display:block;
+  border:2px solid black;
+}
+.visit-button:hover{
+  color: #eee;
+  background-color: #1b1d1c;
 }
 .my-10{
   margin: 10px 0;
@@ -135,13 +145,16 @@ footer{
   border-bottom-right-radius: 50px;
 }
 .portfolio-meta{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 5px 0;
-  text-align: center;
-  border-bottom: 3px solid #1b1d1c;
+  border-bottom: 1px solid #1b1d1c;
 }
 .portfolio-img-border{
-  border-right: 3px solid #1b1d1c;
-  border-left: 3px solid #1b1d1c;
+  padding: 0px 10px;
+  border-right: 1px solid #1b1d1c;
+  border-left: 1px solid #1b1d1c;
 }
 
 .portfolio-image{
@@ -188,9 +201,9 @@ footer{
 .icon{color: #1b1d1c;}
 
 @media only screen and (max-width: 768px) {
-   ul{
+   /* ul{
     display: none;
-  }
+  } */
   .portfolio-list{
       grid-template-columns: repeat(1, 100%);
   }

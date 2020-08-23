@@ -10,10 +10,7 @@ import data  from "./data"
 function App() {
   return (
     <div className="App">
-    {/* <Navbar/> */}
-      <Header contact={data.contact}/>
-     
-
+      <Navbar />
       <Landing projects={data.projects} contact={data.contact}/>
       <Footer contact={data.contact}/>
     </div>
