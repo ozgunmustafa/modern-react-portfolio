@@ -16,8 +16,8 @@ export default function PortfolioCard({ project }) {
 
       <div className="portfolio-meta">
         <div>
-          <h3>Card Title</h3>
-          <small className="text-muted">Design and Development</small>
+          <h3>{project.title}</h3>
+          <small className="text-muted">{project.description}</small>
         </div>
         <a href={project.url} className=" visit-button">
           Git

@@ -56,28 +56,28 @@ export default function Landing({ contact, projects }) {
 
         <div className="portfolio-list">
           <PlanCard
-            title="Planning"
+            title="Planlama"
             text="İstekleriniz doğrultusunda, neyin nasıl yapılması gerektiğinin planını çıkarıyorum. Daha sonrasında ise bunları öncelik derecesine göre sıralıyorum."
             icon={
               <BsFillCollectionFill size="3.5em" style={{ marginTop: 40 }} />
             }
           />
               <PlanCard
-            title="Designing"
+            title="Tasarım"
             text="Planı yapılmış projenizin kabaca bir prototip çıkarıyor ve bu doğrultuda fikrinizin tasarımını hayata geçiriyorum."
             icon={
               <AiOutlineAntDesign  size="3.5em" style={{ marginTop: 40 }} />
             }
           />
               <PlanCard
-            title="Development"
+            title="Geliştirme, Kodlama"
             text="Tasarımı oluşturulmuş projenizin hayata geçirilmesi için gerekli araçları hazırlıyor ve geliştirmeye başlıyorum."
             icon={
               <FaLaptopCode size="3.5em" style={{ marginTop: 40 }} />
             }
           />
               <PlanCard
-            title="FeedBacks"
+            title="Geri Bildirimler"
             text="Projenizin gelişim durumunu 2 aşamalı olarak gösteriyor ve geri bildirimleriniz doğrultusunda değişiklik yapıyorum."
             icon={
               <VscFeedback size="3.5em" style={{ marginTop: 40 }} />
