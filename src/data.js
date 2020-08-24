@@ -61,6 +61,17 @@ export default {
         ],
         url: "https://codepen.io/ozgunmustafa/pen/eYZJLzr"
       },
+       {
+        id: 6, 
+        title: "React Projects",
+        description:"Design and Development",
+        images:[
+            "https://i.hizliresim.com/PCjTKR.png",
+            "https://i.hizliresim.com/hOpKqd.png",
+            "https://i.hizliresim.com/UguGQg.png",
+        ],
+        url: "https://github.com/ozgunmustafa"
+      },
     ],
   
     contact:{
