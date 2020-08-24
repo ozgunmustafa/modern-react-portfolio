@@ -67,8 +67,8 @@ export default {
         description:"Design and Development",
         images:[
             "https://i.hizliresim.com/PCjTKR.png",
-            "https://i.hizliresim.com/hOpKqd.png",
             "https://i.hizliresim.com/UguGQg.png",
+            "https://i.hizliresim.com/hOpKqd.png",
         ],
         url: "https://github.com/ozgunmustafa"
       },
