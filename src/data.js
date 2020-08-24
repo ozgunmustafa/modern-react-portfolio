@@ -80,7 +80,7 @@ export default {
         CODEPEN:"https://codepen.io/ozgunmustafa",
         BEHANCE:"https://www.behance.net/ozgunmustafa",
         EMAIL:"ozzgunmustafa@gmail.com",
-        PHONE:"5073861125",
+        PHONE:"905073861125",
         DRIBBBLE:"https://dribbble.com/ozgunmustafa"
     }
   };

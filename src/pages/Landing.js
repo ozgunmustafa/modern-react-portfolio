@@ -27,7 +27,8 @@ export default function Landing({ contact, projects }) {
         <div className="my-30">
           <Bounce top>
             <a
-              href={`https://wa.me/${contact.PHONE}`}
+              href={`https://wa.me/${contact.PHONE}?text=Bir%20tasarımım%20olsun%20istiyorumm`}
+
               className="btn btn-dark mr-10"
             >
               <FaWhatsapp size=".8em" /> Contact on Whatsapp
