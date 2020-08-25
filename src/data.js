@@ -75,7 +75,7 @@ export default {
       title: "React Projects",
       description: "Design and Development",
       images: [
-        "https://miro.medium.com/max/3000/1*OYUijA9Q8o_U243FEdwjUA.jpeg",
+        "https://i.hizliresim.com/gUcpoN.png",
         "https://i.hizliresim.com/PCjTKR.png",
         "https://i.hizliresim.com/UguGQg.png",
         "https://i.hizliresim.com/hOpKqd.png",
