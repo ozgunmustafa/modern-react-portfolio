@@ -10,6 +10,7 @@ export default {
       title: "RoseGang",
       description: "Design and Development",
       images: [
+        "https://i.hizliresim.com/kaandx.png"
         "https://i.hizliresim.com/VqYBml.png",
         "https://i.hizliresim.com/WBCixX.png",
       ],
@@ -32,7 +33,7 @@ export default {
     {
       id: 3,
       title: "hizliresim.com",
-      description: "Design and Development",
+      description: "Development",
       images: ["https://i.hizliresim.com/rAREMO.png"],
       url: "https://hizliresim.com/",
     },
