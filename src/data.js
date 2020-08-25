@@ -59,20 +59,9 @@ export default {
       url: "https://codepen.io/ozgunmustafa/pen/eYZJLzr",
     },
    
+  
     {
       id: 6,
-      title: "React Projects",
-      description: "Design and Development",
-      images: [
-        "https://i.hizliresim.com/91q4Ne.jpg",
-        "https://i.hizliresim.com/PCjTKR.png",
-        "https://i.hizliresim.com/UguGQg.png",
-        "https://i.hizliresim.com/hOpKqd.png",
-      ],
-      url: "https://github.com/ozgunmustafa",
-    },
-    {
-      id: 7,
       title: "Herkesgurme App Design With Adobe XD",
       description: "Design",
       images: [
@@ -80,6 +69,18 @@ export default {
 
       ],
       url: "https://www.behance.net/gallery/103089499/HerkesGurme-App-Interface-Design",
+    },
+      {
+      id: 7,
+      title: "React Projects",
+      description: "Design and Development",
+      images: [
+        "https://miro.medium.com/max/3000/1*OYUijA9Q8o_U243FEdwjUA.jpeg",
+        "https://i.hizliresim.com/PCjTKR.png",
+        "https://i.hizliresim.com/UguGQg.png",
+        "https://i.hizliresim.com/hOpKqd.png",
+      ],
+      url: "https://github.com/ozgunmustafa",
     },
   ],
 
