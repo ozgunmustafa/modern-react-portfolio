@@ -10,7 +10,7 @@ export default {
       title: "RoseGang",
       description: "Design and Development",
       images: [
-        "https://i.hizliresim.com/kaandx.png"
+        "https://i.hizliresim.com/kaandx.png",
         "https://i.hizliresim.com/VqYBml.png",
         "https://i.hizliresim.com/WBCixX.png",
       ],
