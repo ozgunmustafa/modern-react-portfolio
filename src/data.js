@@ -68,7 +68,7 @@ export default {
       url: "https://github.com/ozgunmustafa",
     },
     {
-      id: ,
+      id: 7,
       title: "Herkesgurme App Design With Adobe XD",
       description: "Design",
       images: [
