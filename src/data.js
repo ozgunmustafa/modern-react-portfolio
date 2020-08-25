@@ -52,7 +52,10 @@ export default {
       id: 5,
       title: "Responsive Top Fixed Navbar Menu",
       description: "Design and Development",
-      images: ["https://i.hizliresim.com/bvPR7Q.png"],
+      images: [
+        "https://cdn.dribbble.com/users/5925699/screenshots/14084327/media/4ae9d32b82bba35f6c31965400a4d972.png",
+        "https://i.hizliresim.com/bvPR7Q.png"
+      ],
       url: "https://codepen.io/ozgunmustafa/pen/eYZJLzr",
     },
    
