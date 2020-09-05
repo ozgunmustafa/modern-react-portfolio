@@ -82,6 +82,15 @@ export default {
       ],
       url: "https://github.com/ozgunmustafa",
     },
+      {
+      id: 8,
+      title: "birdoktorbul.com",
+      description: "Design",
+      images: [
+        "https://mir-cdn.behance.net/v1/rendition/project_modules/1400/c37bbc103736041.5f53853a6727e.png",
+      ],
+      url: "https://www.behance.net/gallery/103736041/FindDocktor",
+    },
   ],
 
   contact: {
