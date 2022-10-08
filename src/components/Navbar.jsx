@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import Burger from "./Burger";
-import Fade from "react-reveal/Fade";
+import React from 'react';
+import styled from 'styled-components';
+import Burger from './Burger';
+import Fade from 'react-reveal/Fade';
 
 const Nav = styled.nav`
   position: relative;
@@ -11,7 +11,7 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
+  padding: 50px 25px;
 
   .logo {
     padding: 15px 0;

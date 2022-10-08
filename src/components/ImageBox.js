@@ -1,11 +1,20 @@
-import React, { useState } from "react";
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css"; // This only needs to be imported once in your app
-import { IoMdImages } from "react-icons/io";
+import React, { useState } from 'react';
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
+import { IoMdImages } from 'react-icons/io';
 
-import FsLightbox from "fslightbox-react";
+import FsLightbox from 'fslightbox-react';
+import { useEffect } from 'react';
 
 export default function ImageBox({ images, open }) {
+  const [imgCollection, setImgCollection] = useState([]);
+
+  useEffect(() => {
+    setImgCollection(
+      images.map((image) => `${window.location.origin + '/img' + image}`),
+    );
+  }, []);
+
   // const [photoIndex, setPhotoIndex] = useState(0);
   // const [isOpen, setIsOpen] = useState(false);
 
@@ -31,13 +40,14 @@ export default function ImageBox({ images, open }) {
   const [toggler, setToggler] = useState(false);
 
   return (
-    <div  className=" action-button">
-        <IoMdImages
-          style={{ cursor: "pointer" }}
-          type="button"
-          onClick={() => setToggler(!toggler)}
-        />
-      <FsLightbox toggler={toggler} sources={images} />
+    <div className=" action-button">
+      {console.log(imgCollection)}
+      <IoMdImages
+        style={{ cursor: 'pointer' }}
+        type="button"
+        onClick={() => setToggler(!toggler)}
+      />
+      <FsLightbox toggler={toggler} sources={imgCollection} />
     </div>
   );
 }

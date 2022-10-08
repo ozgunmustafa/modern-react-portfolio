@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import data from "../data"
+import React from 'react';
+import styled from 'styled-components';
+import data from '../data';
 
 const Ul = styled.ul`
   list-style: none;
@@ -14,7 +14,7 @@ const Ul = styled.ul`
     flex-flow: column nowrap;
     background-color: white;
     position: fixed;
-    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+    transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
     top: 0;
     right: 0;
     height: 100vh;
@@ -30,11 +30,11 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li>Home</li>
-      <li>About Us</li>
+      {/* <li>Home</li> */}
+      {/* <li>About</li> */}
       <li>
-        <a href={`mailto:${data.contactEmail}`}  className="active">
-          Sent Mail
+        <a href={`mailto:${data.contactEmail}`} className="active">
+          Touch Contact
         </a>
       </li>
     </Ul>
