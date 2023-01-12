@@ -1,0 +1,76 @@
+{
+  "en": {
+    "translation": {
+      "introText": "some things about software and design...",
+      "resume": "Resume",
+      "section": {
+        "featuredWorks": {
+          "title": "Featured Works",
+          "description": "You can preview my works"
+        },
+        "stack": {
+          "title": "Stack",
+          "description": "Here is my stack"
+        },
+        "roadmap": {
+          "title": "How do I complete a project?",
+          "description": "Here is my roadmap ",
+          "step1": {
+            "title": "Planning",
+            "text": "In line with your wishes, I make a plan of what should be done and how. Then I rank them in order of priority."
+          },
+          "step2": {
+            "title": "Design",
+            "text": "If you do not have a prepared interface drawing, I can prepare the interface design with Figma."
+          },
+          "step3": {
+            "title": "Development, Coding",
+            "text": "I am coding and developing with the technologies determined at the end of the preparation phase, I enable you to follow and test the process easily via the demo link where you can follow this coding process."
+          },
+          "step4": {
+            "title": "Feedbacks",
+            "text": "In line with your feedback, I make the final touches and get the job done."
+          }
+        }
+      },
+      "view": "Visit"
+    }
+  },
+  "tr": {
+    "translation": {
+      "introText": "yazılım ve tasarım hakkında bir takım şeyler...",
+      "resume":"Özgeçmiş",
+      "section": {
+        "featuredWorks": {
+          "title": "Öne Çıkan Çalışmalarım",
+          "description": "Yaptığım bazı çalışmaların önizlemeleri..."
+        },
+        "stack": {
+          "title": "Birikim",
+          "description": "Bu zamana kadar deneyimlediğim araçlar..."
+        },
+        "roadmap": {
+          "title": "Süreç Nasıl İlerliyor?",
+          "description": "Çalışmalarımda izlediğim yol haritası",
+          "step1": {
+            "title": "Planlama",
+            "text": "İstekleriniz doğrultusunda, geliştirme ortamında ihtiyaç duyulacabilecek teknolojileri belirliyorum."
+          },
+          "step2": {
+            "title": "Tasarım",
+            "text": "Eğer hazırlanmış bir arayüz çiziminiz bulunmuyorsa Figma ile arayüz tasarımını hazırlayabiliyorum."
+          },
+          "step3": {
+            "title": "Kodlama, Geliştirme",
+            "text": "Hazırlık aşamasının sonunda belirlenen teknolojiler ile kodlama ve geliştirme yapıyorum, bu kodlama sürecini takip edebileceğiniz demo linki üzerinden süreci rahatça takip ve test edebilmenizi sağlıyorum."
+          },
+          "step4": {
+            "title": "Geri Bildirimler",
+            "text": "Geri bildirimleriniz doğrultusunda son dokunuşları yaparak işin tamamlanmasını sağlıyorum."
+          }
+        }
+      },
+      "view": "Görüntüle"
+    }
+  }
+}

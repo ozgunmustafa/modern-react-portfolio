@@ -21,9 +21,9 @@ const Nav = styled.nav`
 const Navbar = () => {
   return (
     <Nav className="container">
-      <div>
-        <h3 class="site-name ">ozgunmustafa</h3>
-        <h4 class="slogan text-muted">
+      <div style={{ position: 'relative', zIndex: '999' }}>
+        <h3 className="site-name ">Mustafa Özgün</h3>
+        <h4 className="slogan text-muted">
           <Fade bottom cascade>
             Developer + Designer
           </Fade>

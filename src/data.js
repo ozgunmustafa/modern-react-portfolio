@@ -6,93 +6,119 @@ export default {
     "Designer and front-end developer. It'ss my portfolio page",
   projects: [
     {
-      id: 1,
+      title: 'Elle',
+      description: 'Frontend Development',
+      images: ['/elle-mockup.jpg', '/elle-mockup.jpg'],
+      url: 'https://cv.ozgunmustafa.com/works/elle',
+    },
+    {
+      title: 'Creauthority',
+      description: 'Frontend Development',
+      images: ['/creauthority-mockup.jpg', '/creauthority-mockup.jpg'],
+      url: 'https://creauhtority.vercel.app/',
+    },
+    {
       title: 'Edupick',
       description: 'Frontend Development',
       images: ['/edupick-mockup.jpg', '/edupick-mockup.jpg'],
       url: '#',
     },
     {
-      id: 2,
       title: 'yds.net',
       description: 'Frontend Development',
       images: ['/yds-mockup.jpg', '/yds-mockup.jpg'],
       url: 'https://yds.net/',
     },
     {
-      id: 3,
       title: 'Puanegitim',
       description: 'Frontend Development',
-      images: ['/puanegitim.png', '/puanegitim.png'],
+      images: ['/puanegitim-mockup.jpg', '/puanegitim-mockup.jpg'],
       url: 'https://puanegitim.com/',
     },
     {
-      id: 4,
       title: 'Akindil',
       description: 'Frontend Development',
       images: ['/akindil-mockup.png', '/akindil-mockup.png'],
       url: 'https://akindil.com/',
     },
     {
-      id: 5,
-      title: 'Kocaer Textile',
-      description: 'Frontend Development',
-      images: ['/kocaertextile-mockup.jpg', '/altinbilezik-mockup.jpg'],
-      url: 'https://kocaertextile.com/',
-    },
-    {
-      id: 6,
       title: 'altinbilezik',
       description: 'Frontend Development',
       images: ['/altinbilezik-mockup.jpeg', '/altinbilezik-mockup.jpeg'],
       url: 'https://cv.ozgunmustafa.com/works/altinbilezik-new/',
     },
     {
-      id: 7,
+      title: 'Soho',
+      description: 'Frontend Development',
+      images: ['/soho-mockup.jpg', '/soho-mockup.jpg'],
+      url: 'https://cv.ozgunmustafa.com/works/soho',
+    },
+
+    {
+      title: 'Serkim',
+      description: 'Frontend Development',
+      images: ['/serkim-mockup.jpg', '/serkim-mockup.jpg'],
+      url: 'https://cv.ozgunmustafa.com/works/serkim',
+    },
+
+    {
+      title: 'Image Editor',
+      description: 'Frontend Development',
+      images: ['/image-editor.jpg'],
+      url: 'https://cv.ozgunmustafa.com/works/image-editor/new/',
+    },
+    {
+      title: 'Kocaer Textile',
+      description: 'Frontend Development',
+      images: ['/kocaertextile-mockup.jpg', '/altinbilezik-mockup.jpg'],
+      url: 'https://kocaertextile.com/',
+    },
+    {
       title: 'Treso',
       description: 'Frontend Development',
       images: ['/treso-mockup.jpg', '/treso-mockup.jpg'],
       url: 'https://treso.com.tr/',
     },
+
     {
-      id: 8,
-      title: 'Reflex Mama',
-      description: 'Frontend Development',
-      images: ['/reflex-mockup.jpg', '/reflex-mockup.jpg'],
-      url: 'https://www.reflexmama.com/',
-    },
-    {
-      id: 9,
       title: 'Elegant Menswear',
       description: 'Frontend Development',
       images: ['/elegant-menswear.png', '/elegant-menswear1.png'],
       url: 'https://elegantmenswear.ozgunmustafa.vercel.app/',
     },
+
     {
-      id: 10,
       title: 'Herkesgurme App Design',
       description: 'Design',
       images: ['/herkesgurme-app-design.png'],
       url: 'https://www.behance.net/gallery/103089499/HerkesGurme-App-Interface-Design',
     },
     {
-      id: 11,
-      title: 'hizliresim.com',
-      description: 'Backend, Web Development',
-      images: ['/hizliresim.png'],
-      url: 'https://hizliresim.com/',
+      title: 'Reflex Mama',
+      description: 'Frontend Development',
+      images: ['/reflex-mockup.jpg', '/reflex-mockup.jpg'],
+      url: 'https://www.reflexmama.com/',
     },
     {
-      id: 12,
+      title: 'Responsive Ecommerce',
+      description: 'Frontend Development',
+      images: ['/mystore-ecommerce.jpg', '/mystore-ecommerce.jpg'],
+      url: 'https://cv.ozgunmustafa.com/works/ecommerce/',
+    },
+    {
       title: 'paukampus.com',
       description: 'Design and Development',
       images: ['/paukampus.png', 'https://www.youtube.com/watch?v=AoMAUy8_R_c'],
       url: 'https://www.youtube.com/watch?v=AoMAUy8_R_c',
     },
+    {
+      title: 'hizliresim.com',
+      description: 'Backend, Web Development',
+      images: ['/hizliresim.png'],
+      url: 'https://hizliresim.com/',
+    },
   ],
-  techStack: {
-    
-  },
+  techStack: {},
 
   contact: {
     LINKEDIN: 'https://linkedin.com/in/ozgunmustafa',

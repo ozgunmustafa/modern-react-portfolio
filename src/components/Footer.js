@@ -7,37 +7,33 @@ import {
   FaBehance,
   FaDribbble,
 } from 'react-icons/fa';
+import TargetBlankButton from './TargetBlankButton';
 
 export default function Footer({ contact }) {
   return (
-    <footer className="container p-50">
+    <footer className="container px-25">
       <div className="padding-box">
         <div className="padding-box">
           <div className="padding-box bottom-line">
             <div className="social-icons">
-              <a target="_blank" href={contact.GITHUB} className="iconLink">
+              <TargetBlankButton url={contact.GITHUB} className="social-icon">
                 <FaGithub size="1.7em" className="icon" />
-              </a>
-              <a target="_blank" href={contact.LINKEDIN} className="iconLink">
+              </TargetBlankButton>
+              <TargetBlankButton url={contact.LINKEDIN} className="social-icon">
                 <FaLinkedin size="1.7em" className="icon" />
-              </a>
-              <a target="_blank" href={contact.BEHANCE} className="iconLink">
+              </TargetBlankButton>
+              <TargetBlankButton url={contact.BEHANCE} className="social-icon">
                 <FaBehance size="1.7em" className="icon" />
-              </a>
-              <a
-                target="_blank"
-                href={`mailto:${contact.EMAIL}`}
-                className="iconLink"
-              >
+              </TargetBlankButton>
+              <TargetBlankButton url={contact.EMAIL} className="social-icon">
                 <FaEnvelope size="1.7em" className="icon" />
-              </a>
-
-              <a target="_blank" href={contact.CODEPEN} className="iconLink">
+              </TargetBlankButton>
+              <TargetBlankButton url={contact.CODEPEN} className="social-icon">
                 <FaCodepen size="1.7em" className="icon" />
-              </a>
-              <a target="_blank" href={contact.DRIBBBLE} className="iconLink">
+              </TargetBlankButton>
+              <TargetBlankButton url={contact.DRIBBBLE} className="social-icon">
                 <FaDribbble size="1.7em" className="icon" />
-              </a>
+              </TargetBlankButton>
             </div>
             ©2020 designed by - Mustafa Ozgun
           </div>

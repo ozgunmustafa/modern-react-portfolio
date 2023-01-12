@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
-import ImageBox from './ImageBox';
-import { IoMdImages } from 'react-icons/io';
+import React from 'react';
+import TargetBlankButton from './TargetBlankButton';
+import { useTranslation } from 'react-i18next';
 
-export default function PortfolioCard({ project }) {
+export default function PortfolioCard({ project, className }) {
+  const { t } = useTranslation();
+
   return (
-    <div class="portfolio-card" key={project.id}>
+    <div
+      className={`${className && className} portfolio-card`}
+      key={project.id}
+    >
       <img
         className="portfolio-image portfolio-img-border "
         src={window.location.origin + '/img' + project.images[0]}
@@ -16,12 +21,9 @@ export default function PortfolioCard({ project }) {
           <h3>{project.title}</h3>
           <small className="text-muted">{project.description}</small>
         </div>
-        <div>
-          {/* <ImageBox images={project.images} /> */}
-          <a href={project.url} className=" action-button">
-            Visit
-          </a>
-        </div>
+        <TargetBlankButton url={project.url} className="action-button">
+          {t('view')}
+        </TargetBlankButton>
       </div>
     </div>
   );

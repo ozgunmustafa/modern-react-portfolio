@@ -7,9 +7,32 @@
 html {
   background-color: white;
 }
+body {
+  position: relative;
+}
+body::before {
+  content: '';
+  background-color: #ffffff;
+  background-image: url(https://www.transparenttextures.com/patterns/axiom-pattern.png);
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+}
 a {
   text-decoration: none;
   color: #1b1d1c;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+button[disabled] {
+  cursor: default;
 }
 
 /* nav{
@@ -91,16 +114,30 @@ footer {
   font-weight: bold;
   font-family: 'Inter', sans-serif;
 }
+.d-flex {
+  display: flex;
+}
+.align-items-center {
+  align-items: center;
+}
+.gap-2 {
+  gap: 0.75rem;
+}
+.gap-3 {
+  gap: 1rem;
+}
 .d-block {
   display: block;
 }
 
 .btn {
-  padding: 1.8vw 2.2vw;
+  padding: 1.8vw 2.4vw;
   display: inline-block;
-  background-color: #eee;
+  background-color: #fff;
+  border: 1px solid #000;
   color: #1b1d1c;
   font-weight: 500;
+  transition: 0.3s;
 }
 .btn:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -114,6 +151,7 @@ footer {
   color: black;
   display: inline-block;
   border: 1px solid black;
+  min-height: 35px;
 }
 .action-button + .action-button {
   margin-left: 3px;
@@ -141,14 +179,16 @@ footer {
 .portfolio-list {
   margin: 20px 0;
   display: grid;
-  grid-template-columns: repeat(3, 3fr);
+  grid-template-columns: 1fr;
   grid-gap: 20px;
 }
+
 .portfolio-card {
   padding: 20px 0;
   position: relative;
 }
 .plan-card {
+  background-color: white;
   padding: 30px;
   min-height: 300px;
   border: 2px solid black;
@@ -170,16 +210,15 @@ footer {
 
 .portfolio-image {
   width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16/10;
   object-fit: cover;
   object-position: top;
   position: relative;
-  filter: grayscale(99%);
   transition: all ease 0.5s;
 }
 
 .portfolio-image:hover {
-  filter: grayscale(0%);
+  filter: brightness(1.05);
 }
 
 .portfolio-icon {
@@ -204,10 +243,11 @@ footer {
 .social-icons {
   display: flex;
   flex-wrap: wrap;
+  gap: 1.25rem;
   margin: 10px 0px;
 }
-.social-icons a {
-  margin-right: 10px;
+.social-icons .social-icon {
+  cursor: pointer;
 }
 .bottom-line {
   border-bottom: 2px solid black;
@@ -219,21 +259,27 @@ footer {
 section {
   padding-block: 2rem;
 }
+section.contact {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
 
 .tech-stack-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   gap: 0.75rem;
 }
 .tech-stack-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  min-width: 50px;
-  height: 50px;
+  width: 100%;
+  aspect-ratio: 1/1;
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: white;
+
   position: relative;
 }
 .tech-stack-item:before {
@@ -259,23 +305,48 @@ section {
   visibility: visible;
   transform: translateY(3px);
 }
+.lang-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+.lang-buttons button {
+  background-color: transparent;
+  min-width: 40px;
+  color: rgb(183, 183, 183);
+}
+.lang-buttons button.active {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 50em;
+  color: black;
+}
 
-@media only screen and (max-width: 768px) {
-  /* ul{
-    display: none;
-  } */
+@media only screen and (min-width: 1024px) {
   .portfolio-list {
-    grid-template-columns: repeat(1, 100%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .colum-span-lg-2 {
+    grid-column: span 2;
+  }
+
+  .w-lg-50 {
+    width: 50%;
+  }
+  .w-lg-75 {
+    width: 75%;
   }
 }
 
 @media only screen and (min-width: 768px) {
+  .tech-stack-list {
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  }
   .landing-text {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
-  .portfolio-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
   .empty-text {
     -moz-text-fill-color: white;
     -webkit-text-fill-color: white;
